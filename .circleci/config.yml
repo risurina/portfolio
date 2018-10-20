@@ -4,20 +4,14 @@
 #
 version: 2
 jobs:
-  build:
-    docker:
-      - image: circleci/node:8.0
-    steps:
-      - run:
-          name: "Checking Versions"
-          command: |
-            node --version
-            npm --version
-      
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mongo:3.4.4
+    build:
+      docker:
+        - image: circleci/node:8.0
+        
+        # Specify service dependencies here if necessary
+        # CircleCI maintains a library of pre-built images
+        # documented at https://circleci.com/docs/2.0/circleci-images/
+        # - image: circleci/mongo:3.4.4
 
     working_directory: ~/repo
 
