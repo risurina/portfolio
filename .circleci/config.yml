@@ -35,7 +35,6 @@ jobs:
        
       - run: npm install
       - run: npm install builtin-modules
-      - run: npm install npm
       
       # run tests!
       - run: npm run build
