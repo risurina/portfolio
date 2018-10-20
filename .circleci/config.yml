@@ -36,5 +36,9 @@ jobs:
       - run: sudo npm install
       - run: sudo npm install has-ansi
       
+      - run: sudo ls
+      
+      - run: sudo ls node_modules
+      
       # run tests!
       - run: sudo npm run build
