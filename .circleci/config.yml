@@ -26,16 +26,13 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
+      - run: npm install -g @vue/cli
       - run: npm install
 
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-       
-      - run: npm install
-      - run: npm install builtin-modules
-      - run: npm install tapable
       
       # run tests!
       - run: npm run build
