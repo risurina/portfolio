@@ -29,6 +29,7 @@ jobs:
       - run: sudo npm install npm
       - run: sudo npm install -g @vue/cli
       - run: sudo npm install
+      - run: sudo npm install -g has-ansi
 
       - save_cache:
           paths:
