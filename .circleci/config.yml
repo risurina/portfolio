@@ -34,6 +34,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
        
       - run: npm install
+      - run: npm install builtin-modules
       - run: npm install npm
       
       # run tests!
